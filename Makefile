@@ -17,7 +17,7 @@ docker-build:
 	docker build -t mcp-server .
 
 docker-run:
-	docker run -i --rm mcp-server
+	docker run -i --rm --network=host mcp-server
 
 docker-stop:
 	docker stop mcp-server || true
